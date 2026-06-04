@@ -14,6 +14,7 @@ function App() {
   return 1 + 1
 }`)
 
+  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
   const [ review, setReview ] = useState(``)
   const [ language, setLanguage ] = useState(() => {
     const saved = localStorage.getItem('language');
@@ -32,7 +33,7 @@ function App() {
 
   async function reviewCode() {
     try {
-      const response = await axios.post('http://localhost:3000/ai/get-review', { code, language })
+      const response = await axios.post(`${API_URL}/ai/get-review`, { code, language })
       setReview(response.data)
     } catch (error) {
       setReview("Error: " + (error.response?.data || error.message))
