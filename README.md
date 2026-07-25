@@ -1,34 +1,79 @@
-## 📖 Overview
+# 🤖 AI Code Review
 
-AI Code Reviewer is an AI-powered web application that reviews source code through the Groq API. It analyzes code, identifies bugs, suggests optimizations, recommends best practices, and improves overall code quality. The application supports more than **100 programming languages** and delivers fast, accurate AI responses.
-
----
+> An intelligent code review application powered by Groq AI that analyzes your code and provides instant feedback, suggestions, and improvements.
 
 ## ✨ Features
 
-- 🤖 AI code review
-- 🐞 Bug detection
-- 🚀 Performance optimization
-- 🛡️ Best practice recommendations
-- 💡 Code quality analysis
-- 🌍 Support for 100+ programming languages
-- ⚡ Fast AI responses
-- 📱 Responsive interface
-- 🎨 Modern UI
+- 🧠 AI-powered code analysis using Groq SDK
+- 📝 Paste code and get instant reviews
+- 💡 Smart suggestions for code improvement
+- 🐛 Bug detection and security recommendations
+- ⚡ Fast response time with Groq LLM
+- 🎨 Clean and intuitive React frontend
+- 🔄 Real-time code processing
+- 📱 Responsive design
+
+## 🛠️ Tech Stack
+
+| Category | Technologies |
+|----------|-------------|
+| Frontend | React, Vite |
+| Backend | Node.js, Express.js |
+| AI Engine | Groq SDK (LLM) |
+| Styling | CSS |
+| API | RESTful with CORS |
+| Environment | dotenv |
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v18+)
+- Groq API Key
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/manuskhan23/AI-Code-Review.git
+
+# Navigate to project directory
+cd AI-Code-Review
+
+# Install backend dependencies
+cd BackEnd
+npm install
+
+# Create .env file and add your Groq API key
+echo "GROQ_API_KEY=your_key_here" > .env
+
+# Start backend server
+node server.js
+
+# Install frontend dependencies (new terminal)
+cd ../Frontend
+npm install
+
+# Start frontend
+npm run dev
+```
+
+### Project Structure
+
+```
+├── BackEnd/         # Express API server
+│   ├── src/
+│   ├── server.js
+│   └── package.json
+└── Frontend/        # React application
+    ├── src/
+    ├── public/
+    └── vite.config.js
+```
+
+## 📸 Preview
+
+> Coming soon
 
 ---
 
-## 🎯 How It Works
-
-1. Select a programming language.
-2. Paste your source code.
-3. Click **Review**.
-4. The backend sends the code to the Groq API.
-5. The AI analyzes the code.
-6. Review results appear instantly.
-
----
-
-## 👨‍💻 About the Project
-
-AI Code Reviewer helps developers write cleaner, more reliable code. It detects issues, explains problems, recommends improvements, and promotes best coding practices through AI. The project combines a React frontend with an Express.js and Node.js backend for a fast and responsive experience.
+<p align="center"><sub>Developed by M Anus</sub></p>
